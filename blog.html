@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore the Luxe Glow Glow Guide for ingredient education, business tips, and behind-the-scenes features with founder Elise Harper."
+    />
+    <title>Glow Guide | Luxe Glow Insights</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <script defer src="assets/js/products.js"></script>
+    <script defer src="assets/js/cart.js"></script>
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrapper site-header__inner">
+        <a class="brand" href="index.html">Luxe Glow</a>
+        <nav class="nav" data-nav>
+          <a href="index.html">Home</a>
+          <a href="collections.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="consultation.html">Consultation</a>
+          <a href="contact.html">Contact</a>
+          <a href="blog.html" aria-current="page">Glow Guide</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn--ghost" href="collections.html">Shop rituals</a>
+          <span class="header-divider" aria-hidden="true"></span>
+          <a class="btn btn--ghost cart-button" href="cart.html" aria-label="View cart">
+            <span>Cart</span>
+            <span class="badge" data-cart-count>0</span>
+          </a>
+          <button class="nav__mobile-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Toggle menu">
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="wrapper">
+          <p class="section__label">Glow Guide</p>
+          <h1 class="page-hero__title">Strategies and science for founders who glow</h1>
+          <p class="page-hero__description">
+            Articles, interviews, and playbooks to support your skin, your clients, and your business. Updated bi-weekly by
+            Elise Harper and the Luxe Glow esthetics team.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrapper grid grid--two">
+          <article class="blog-card" id="scale">
+            <img
+              class="blog-card__image"
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+              alt="Team strategy session"
+            />
+            <div class="blog-card__body">
+              <p class="blog-card__meta">Business Playbook</p>
+              <h2 class="blog-card__title">From treatment room to global brand in three phases</h2>
+              <p class="text-muted">
+                Elise shares the milestones, systems, and hiring decisions that helped Luxe Glow scale sustainably while
+                maintaining boutique service.
+              </p>
+              <a class="btn btn--ghost" href="#">Download the free scaling checklist</a>
+            </div>
+          </article>
+          <article class="blog-card">
+            <img
+              class="blog-card__image"
+              src="https://images.unsplash.com/photo-1579722826048-69b4c1d8b83f?auto=format&fit=crop&w=1200&q=80"
+              alt="Laboratory ingredients"
+            />
+            <div class="blog-card__body">
+              <p class="blog-card__meta">Ingredient Science</p>
+              <h2 class="blog-card__title">The triple-action vitamin C complex we swear by</h2>
+              <p class="text-muted">
+                Understand why our radiance serum blends stabilized vitamin C with niacinamide and licorice root for bright,
+                even-toned results.
+              </p>
+              <a class="btn btn--ghost" href="product.html?id=radiance-renewal-serum">Shop the featured serum</a>
+            </div>
+          </article>
+          <article class="blog-card">
+            <img
+              class="blog-card__image"
+              src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80"
+              alt="Elise Harper"
+            />
+            <div class="blog-card__body">
+              <p class="blog-card__meta">Founder Notes</p>
+              <h2 class="blog-card__title">How I structure a revenue-generating morning routine</h2>
+              <p class="text-muted">
+                Elise walks through a morning ritual that prioritizes skin health, mental clarity, and CEO-level energy.
+              </p>
+              <a class="btn btn--ghost" href="consultation.html">Book a strategy call</a>
+            </div>
+          </article>
+          <article class="blog-card">
+            <img
+              class="blog-card__image"
+              src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=80"
+              alt="Skincare retail shelves"
+            />
+            <div class="blog-card__body">
+              <p class="blog-card__meta">Retail Partners</p>
+              <h2 class="blog-card__title">How to train your team for high-conversion retail</h2>
+              <p class="text-muted">
+                Give your staff the talking points, demos, and follow-up systems needed to create unforgettable guest
+                experiences.
+              </p>
+              <a class="btn btn--ghost" href="wholesale.html#training">Preview the training portal</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section bg-light">
+        <div class="wrapper accent-block">
+          <h3 class="accent-block__title">Subscribe to Glow Dispatch</h3>
+          <p>
+            Join 25,000+ founders and beauty pros receiving launch strategies, ingredient insights, and invite-only event
+            access.
+          </p>
+          <a class="btn btn--primary" href="consultation.html">Join the waitlist</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrapper">
+        <div class="site-footer__upper">
+          <div class="footer-brand">
+            <a class="brand" href="index.html">Luxe Glow</a>
+            <p>
+              Luxe Glow is a modern skin health studio and product line delivering high-performance rituals that honor skin,
+              soul, and sustainability.
+            </p>
+          </div>
+          <div class="footer-nav">
+            <strong>Navigation</strong>
+            <a href="collections.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="consultation.html">Consultation</a>
+            <a href="blog.html" aria-current="page">Glow Guide</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="footer-links">
+            <strong>Support</strong>
+            <a href="privacy-policy.html">Privacy policy</a>
+            <a href="terms.html">Terms of service</a>
+            <a href="returns.html">Returns &amp; exchanges</a>
+            <a href="wholesale.html">Wholesale program</a>
+          </div>
+          <div class="footer-links">
+            <strong>Contact</strong>
+            <span>hello@luxeglow.com</span>
+            <span>+1 (213) 555-0198</span>
+            <span>Los Angeles • Austin • Remote</span>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <span>&copy; <span data-year></span> Luxe Glow. All rights reserved.</span>
+          <span>Crafted with intention for skin entrepreneurs worldwide.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

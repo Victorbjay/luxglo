@@ -1,184 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Page Not Found | Luxe Glow</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ffeef8 0%, #fff5f8 50%, #f0e8ff 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-        }
-
-        .error-container {
-            text-align: center;
-            max-width: 600px;
-        }
-
-        .error-code {
-            font-size: 8rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #c471ed 0%, #f64f59 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            line-height: 1;
-            margin-bottom: 1rem;
-            animation: float 3s ease-in-out infinite;
-        }
-
-        .error-icon {
-            font-size: 6rem;
-            margin-bottom: 2rem;
-            animation: float 3s ease-in-out infinite;
-            animation-delay: 0.5s;
-        }
-
-        h1 {
-            font-size: 2rem;
-            color: #2d2d2d;
-            margin-bottom: 1rem;
-        }
-
-        p {
-            color: #666;
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 2rem;
-        }
-
-        .buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            padding: 1rem 2rem;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s;
-            display: inline-block;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #c471ed 0%, #f64f59 100%);
-            color: white;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 35px rgba(196, 113, 237, 0.4);
-        }
-
-        .btn-secondary {
-            background: white;
-            color: #c471ed;
-            border: 2px solid #c471ed;
-        }
-
-        .btn-secondary:hover {
-            background: #c471ed;
-            color: white;
-        }
-
-        .search-suggestions {
-            margin-top: 3rem;
-            text-align: left;
-        }
-
-        .search-suggestions h3 {
-            color: #2d2d2d;
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-        }
-
-        .suggestion-list {
-            list-style: none;
-        }
-
-        .suggestion-list li {
-            margin-bottom: 0.8rem;
-        }
-
-        .suggestion-list a {
-            color: #c471ed;
-            text-decoration: none;
-            transition: color 0.3s;
-            font-weight: 500;
-        }
-
-        .suggestion-list a:hover {
-            color: #f64f59;
-        }
-
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .error-code {
-                font-size: 5rem;
-            }
-
-            .error-icon {
-                font-size: 4rem;
-            }
-
-            h1 {
-                font-size: 1.5rem;
-            }
-
-            .buttons {
-                flex-direction: column;
-            }
-
-            .btn {
-                width: 100%;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="error-container">
-        <div class="error-icon">🌸</div>
-        <div class="error-code">404</div>
-        <h1>Oops! Page Not Found</h1>
-        <p>It seems the page you're looking for has wandered off like a bubble in the wind. Let's get you back on track to finding your perfect skincare routine!</p>
-        
-        <div class="buttons">
-            <a href="/" class="btn btn-primary">Back to Home</a>
-            <a href="/#products" class="btn btn-secondary">Shop Products</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="The page you’re looking for can’t be found. Return to Luxe Glow to discover premium skincare rituals." />
+    <title>Page Not Found | Luxe Glow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <script defer src="assets/js/products.js"></script>
+    <script defer src="assets/js/cart.js"></script>
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <main class="section" style="min-height: 100vh; display: flex; align-items: center;">
+      <div class="wrapper">
+        <div class="accent-block">
+          <p class="section__label">404</p>
+          <h1 class="accent-block__title">The glow you seek is in another room</h1>
+          <p>
+            We couldn’t find the page you were looking for. Explore our curated rituals, learn from the Glow Guide, or connect
+            with the Luxe Glow concierge team for personalized support.
+          </p>
+          <div class="hero__actions" style="justify-content: center;">
+            <a class="btn btn--primary" href="index.html">Return home</a>
+            <a class="btn btn--ghost" href="collections.html">Shop collection</a>
+            <a class="btn btn--ghost" href="contact.html">Contact support</a>
+          </div>
         </div>
-
-        <div class="search-suggestions">
-            <h3>Popular Pages:</h3>
-            <ul class="suggestion-list">
-                <li><a href="/">🏠 Home</a></li>
-                <li><a href="/#features">✨ Our Features</a></li>
-                <li><a href="/#products">🛍️ Shop Products</a></li>
-                <li><a href="/#testimonials">💬 Customer Reviews</a></li>
-                <li><a href="/#contact">📞 Contact Us</a></li>
-            </ul>
-        </div>
-    </div>
-</body>
+      </div>
+    </main>
+  </body>
 </html>
