@@ -1,138 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Review your Luxe Glow cart, update quantities, and prepare for checkout. Professional-grade skincare shipped with care." />
-    <title>Your Cart | Luxe Glow</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="icon" type="image/png" href="favicon.ico" />
-    <script defer src="assets/js/products.js"></script>
-    <script defer src="assets/js/cart.js"></script>
-    <script defer src="assets/js/main.js"></script>
-    <script defer src="assets/js/cart-page.js"></script>
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="wrapper site-header__inner">
-        <a class="brand" href="index.html">Luxe Glow</a>
-        <nav class="nav" data-nav>
-          <a href="index.html">Home</a>
-          <a href="collections.html">Shop</a>
-          <a href="about.html">About</a>
-          <a href="consultation.html">Consultation</a>
-          <a href="contact.html">Contact</a>
-          <a href="blog.html">Glow Guide</a>
-        </nav>
-        <div class="header-actions">
-          <a class="btn btn--ghost" href="collections.html">Continue shopping</a>
-          <span class="header-divider" aria-hidden="true"></span>
-          <a class="btn btn--ghost cart-button" href="cart.html" aria-label="View cart" aria-current="page">
-            <span>Cart</span>
-            <span class="badge" data-cart-count>0</span>
-          </a>
-          <button class="nav__mobile-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Toggle menu">
-            ☰
-          </button>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Review your Luxe Glow cart. Secure checkout with barrier-friendly, science-backed skincare.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Your Cart • Luxe Glow</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Primary">
+      <a class="brand" href="index.html">Luxe Glow</a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-navigation">
+        <span class="sr-only">Toggle navigation</span>
+        &#9776;
+      </button>
+      <ul class="nav-links" id="primary-navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Shop</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn btn-secondary" href="consultations.html">Book a consultation</a>
+        <a class="cart-link" href="cart.html" aria-label="View cart" aria-current="page">
+          <span>🛒</span>
+          <span class="cart-count" data-cart-count hidden>0</span>
+        </a>
       </div>
-    </header>
+    </nav>
+  </header>
 
-    <main>
-      <section class="page-hero">
-        <div class="wrapper">
-          <p class="section__label">Your bag</p>
-          <h1 class="page-hero__title">Glow-ready and waiting</h1>
-          <p class="page-hero__description">
-            Review your ritual wardrobe, adjust quantities, and head to checkout. Payment integrations can be connected to your
-            preferred provider in minutes.
-          </p>
-        </div>
-      </section>
+  <main>
+    <section class="page-hero">
+      <h1>Your ritual curation</h1>
+      <p>Review and edit your selections before checkout. Shipping is complimentary on orders over $150.</p>
+    </section>
 
-      <section class="section">
-        <div class="wrapper cart">
-          <div class="cart-table">
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">Product</th>
-                  <th scope="col">Price</th>
-                  <th scope="col">Quantity</th>
-                  <th scope="col">Total</th>
-                  <th scope="col">Action</th>
-                </tr>
-              </thead>
-              <tbody data-cart-items></tbody>
-            </table>
-            <div class="cart-empty" data-cart-empty hidden>
-              <h2>Your cart is currently empty</h2>
-              <p>Discover your next ritual in our shop or book a consultation for tailored recommendations.</p>
-              <a class="btn btn--primary" href="collections.html">Browse rituals</a>
-            </div>
-          </div>
-          <aside class="cart-summary">
-            <h2>Order summary</h2>
-            <p class="text-muted" data-cart-count-summary>0 items</p>
-            <div class="cart-summary__row">
-              <span>Subtotal</span>
-              <span data-cart-subtotal>$0.00</span>
-            </div>
-            <div class="cart-summary__row">
-              <span>Estimated total</span>
-              <span data-cart-total>$0.00</span>
-            </div>
-            <p class="form-note">
-              Taxes and shipping calculated at checkout. Integrate Stripe, Shopify, or your preferred gateway to process secure
-              payments.
-            </p>
-            <button class="btn btn--primary" type="button" data-checkout disabled>Proceed to checkout</button>
-            <a class="btn btn--ghost" href="consultation.html">Need help choosing?</a>
-          </aside>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="wrapper">
-        <div class="site-footer__upper">
-          <div class="footer-brand">
-            <a class="brand" href="index.html">Luxe Glow</a>
-            <p>
-              Luxe Glow is a modern skin health studio and product line delivering high-performance rituals that honor skin,
-              soul, and sustainability.
-            </p>
-          </div>
-          <div class="footer-nav">
-            <strong>Navigation</strong>
-            <a href="collections.html">Shop</a>
-            <a href="about.html">About</a>
-            <a href="consultation.html">Consultation</a>
-            <a href="blog.html">Glow Guide</a>
-            <a href="contact.html">Contact</a>
-          </div>
-          <div class="footer-links">
-            <strong>Support</strong>
-            <a href="privacy-policy.html">Privacy policy</a>
-            <a href="terms.html">Terms of service</a>
-            <a href="returns.html">Returns &amp; exchanges</a>
-            <a href="wholesale.html">Wholesale program</a>
-          </div>
-          <div class="footer-links">
-            <strong>Contact</strong>
-            <span>hello@luxeglow.com</span>
-            <span>+1 (213) 555-0198</span>
-            <span>Los Angeles • Austin • Remote</span>
-          </div>
-        </div>
-        <div class="site-footer__bottom">
-          <span>&copy; <span data-year></span> Luxe Glow. All rights reserved.</span>
-          <span>Crafted with intention for skin entrepreneurs worldwide.</span>
-        </div>
+    <section class="cart">
+      <div class="cart-items" data-cart-items>
+        <p>Loading your cart...</p>
       </div>
-    </footer>
-  </body>
+      <div class="cart-summary" data-cart-summary>
+        <h2>Order Summary</h2>
+        <p>Please add products to view totals.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h4>Luxe Glow</h4>
+        <p>Science-backed rituals rooted in spa heritage, designed by esthetician and founder Noelle James.</p>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="consultations.html">Consultations</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Support</h5>
+        <ul class="footer-links">
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="shipping-returns.html">Shipping &amp; returns</a></li>
+          <li><a href="privacy-policy.html">Privacy policy</a></li>
+          <li><a href="terms-of-service.html">Terms of service</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Newsletter</h5>
+        <p>Join the glow letters for launch alerts, skin education and special events.</p>
+        <form class="contact-form" action="#" method="post">
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input id="newsletter-email" name="email" type="email" placeholder="you@example.com" required>
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> Luxe Glow. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+  <script defer src="assets/js/app.js"></script>
+</body>
 </html>

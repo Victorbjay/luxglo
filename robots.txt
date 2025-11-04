@@ -17,6 +17,8 @@ Sitemap: https://www.luxeglow.com/sitemap.xml
 # Specific rules for major search engines
 User-agent: Googlebot
 Allow: /
+Allow: /*.css$
+Allow: /*.js$
 
 User-agent: Bingbot
 Allow: /
@@ -27,8 +29,3 @@ Crawl-delay: 30
 
 User-agent: SemrushBot
 Crawl-delay: 30
-
-# Allow indexing of CSS and JS for better SEO
-User-agent: Googlebot
-Allow: /*.css$
-Allow: /*.js$

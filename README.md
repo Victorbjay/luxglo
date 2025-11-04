@@ -1,108 +1,68 @@
-# Luxe Glow – Professional Skincare Website
+# Luxe Glow Website
 
-A fully responsive, multi-page marketing and commerce experience for the Luxe Glow skincare brand. The site showcases the
-founder story, product catalog, consultation services, education hub, and cart-ready shopping flow built with vanilla
-HTML, CSS, and JavaScript.
+A multi-page marketing and commerce-ready experience for Luxe Glow, a professional skincare brand. The site is built with semantic HTML, modern CSS and vanilla JavaScript to deliver a performant, scalable and easily maintainable codebase.
 
 ## ✨ Highlights
 
-- **Scalable architecture** – modular CSS, reusable layout components, and centralized product data to simplify updates.
-- **Commerce ready** – dynamic product listings, product detail pages, persistent cart powered by `localStorage`, and a
-  checkout handoff placeholder ready for Stripe, Shopify, or similar payment providers.
-- **Consultation funnel** – lead capture form with validation and customizable messaging for concierge services.
-- **SEO optimized** – semantic markup, descriptive meta tags, sitemap, and structured navigation for discoverability.
-- **Partner enablement** – dedicated wholesale, returns, terms, and privacy pages for a complete business presence.
+- Responsive design optimized for desktop and mobile.
+- Reusable global navigation, footer and typography system.
+- Dynamic product rendering powered by a single JavaScript catalog.
+- LocalStorage-backed cart with quantity management and order summary.
+- Accessible accordions, keyboard-friendly navigation toggle and semantic markup.
+- Comprehensive content strategy including About, Journal, Consultations, FAQ, Policies and Cart pages.
 
-## 🗂️ Project structure
+## 📁 Project structure
 
 ```
-assets/
-  css/
-    main.css           # Global design system, layout utilities, components
-  js/
-    cart.js            # Cart state management + toast notifications
-    cart-page.js       # Cart page rendering and quantity controls
-    main.js            # Navigation, cart badge sync, shared interactions
-    product.js         # Product detail rendering and related items
-    products.js        # Central product catalog data
-    shop.js            # Collection filters and sorting
-  img/                 # Placeholders for brand imagery if self-hosted
-index.html             # Homepage
-collections.html       # Shop / product listing
-product.html           # Product detail template
-cart.html              # Cart + order summary
-consultation.html      # Virtual consultation funnel
-about.html             # Founder story and values
-contact.html           # Contact & partnerships hub
-blog.html              # Glow Guide content hub
-privacy-policy.html    # Privacy statement
-terms.html             # Terms of service
-returns.html           # Returns & exchanges policy
-wholesale.html         # Wholesale partner portal
-404.html               # Custom not-found page
-robots.txt             # Search engine directives
-sitemap.xml            # Crawlable map of site URLs
-favicon.ico            # Brand icon (replace with final artwork)
+├── assets/
+│   ├── css/
+│   │   └── style.css           # Global styles and layout system
+│   └── js/
+│       └── app.js              # Product catalog, cart logic, UI interactions
+├── index.html                  # Homepage
+├── about.html                  # Founder story & values
+├── products.html               # Shop with add-to-cart buttons
+├── journal.html                # Education-focused articles
+├── consultations.html          # Services and booking information
+├── contact.html                # Contact details and inquiry form
+├── cart.html                   # Cart review and order summary
+├── faq.html                    # Frequently asked questions
+├── shipping-returns.html       # Logistics policy
+├── privacy-policy.html         # Data privacy statement
+├── terms-of-service.html       # Terms and conditions
+├── 404.html                    # Custom error page
+├── robots.txt                  # Crawl directives
+├── sitemap.xml                 # Search engine sitemap
+└── README.md                   # Project overview
 ```
 
 ## 🚀 Getting started
 
-1. **Clone or download** this repository.
-2. Open the project root in your preferred editor.
-3. Launch a local web server (recommended for `fetch`/`localStorage` support):
+1. Clone or download the repository.
+2. Open `index.html` in your preferred browser, or serve the project locally with any static file server.
+3. Customize product data inside `assets/js/app.js` to match your catalog (update names, pricing, images and tags).
+4. Replace stock imagery URLs with brand photography where needed.
+5. Update business contact information and email addresses across the content pages.
 
-   ```bash
-   # Python 3
-   python -m http.server 8000
-   # or Node
-   npx serve
-   ```
+## 🛒 Cart behaviour
 
-4. Visit `http://localhost:8000` (or the provided URL) to explore the site.
-
-> Tip: Because cart data is stored in `localStorage`, you can clear your browser storage to reset the cart between tests.
-
-## 🛍️ Customizing products
-
-- Update `assets/js/products.js` to edit product names, imagery, pricing, copy, or categories.
-- Add additional products by appending to the `LuxgloProducts` array—listings, product detail pages, and the cart will
-  reflect the new items automatically.
-- Product images currently load from Unsplash. Replace the URLs with self-hosted assets in `assets/img/` for production
-  deployments.
-
-## 💳 Connecting a real checkout
-
-The cart currently displays totals and provides a `data-checkout` button that triggers a placeholder alert. To integrate
-payments:
-
-1. Replace the alert handler in `assets/js/cart-page.js` with your provider’s SDK call (Stripe Checkout, Shopify Buy
-   Button, LemonSqueezy, etc.).
-2. Optionally sync `LuxgloCart.getDetailedItems()` with your backend to create orders or invoices before redirecting.
-3. Ensure your provider returns to a success page (create `success.html`) and handles webhook fulfillment.
-
-## 📣 Forms & lead capture
-
-- The consultation form lives on `consultation.html` and is validated client-side in `assets/js/main.js`.
-- Connect to services such as HubSpot, Mailchimp, Airtable, or Calendly by replacing the alert with an API call or embed
-  script.
-- Always secure forms with HTTPS and spam protection (reCAPTCHA, hCaptcha) before going live.
+- Products are defined once in `productCatalog` inside `app.js` and rendered automatically on the home and shop pages.
+- Cart contents persist in `localStorage` under the `luxeglow_cart` key.
+- The cart badge updates globally; removing items or adjusting quantities recalculates totals instantly.
 
 ## 🌐 Deployment checklist
 
-- Configure custom domain + HTTPS using Netlify, Vercel, Render, or static hosting of choice.
-- Upload/update `favicon.ico` and any brand imagery.
-- Submit `sitemap.xml` to Google Search Console and Bing Webmaster Tools.
-- Connect analytics (e.g., Plausible, GA4) and marketing pixels as needed.
-- Set up automated backups or leverage git-based deployments to maintain version history.
+- Upload all files to your static hosting provider (Netlify, Vercel, GitHub Pages, etc.).
+- Ensure `robots.txt` and `sitemap.xml` are available at the root of your domain.
+- Configure a form handling service (Formspree, Netlify Forms, etc.) if you need live form submissions.
+- Replace placeholder social proof and statistics with real metrics prior to launch.
 
-## 🛡️ Security & maintenance
+## 🛡️ Accessibility & SEO
 
-- Keep dependencies minimal—this project uses no external build tooling, making security management straightforward.
-- Review and rotate access credentials for any connected services (email, payment gateways, CRM).
-- Schedule quarterly content audits to refresh testimonials, articles, and promotional copy.
-- Monitor performance with tools like Lighthouse or WebPageTest and compress new images before publishing.
+- Skip-link-ready structure with descriptive headings and accessible navigation controls.
+- Buttons and interactive elements expose `aria` attributes where appropriate.
+- Meta descriptions, canonical tags and Open Graph data are defined for primary pages.
 
-## 🤝 Support & contributions
+## 📄 Licensing
 
-Feel free to adapt this project for your own skincare or beauty brand. Contributions via pull requests are welcome—please
-include clear descriptions and ensure HTML/CSS/JS follow the existing conventions.
+All code in this repository is provided as a starting point for the Luxe Glow skincare brand and can be customized for commercial use. Replace third-party images with assets that you have rights to use before going live.

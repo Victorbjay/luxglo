@@ -1,36 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="The page you’re looking for can’t be found. Return to Luxe Glow to discover premium skincare rituals." />
-    <title>Page Not Found | Luxe Glow</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="icon" type="image/png" href="favicon.ico" />
-    <script defer src="assets/js/products.js"></script>
-    <script defer src="assets/js/cart.js"></script>
-    <script defer src="assets/js/main.js"></script>
-  </head>
-  <body>
-    <main class="section" style="min-height: 100vh; display: flex; align-items: center;">
-      <div class="wrapper">
-        <div class="accent-block">
-          <p class="section__label">404</p>
-          <h1 class="accent-block__title">The glow you seek is in another room</h1>
-          <p>
-            We couldn’t find the page you were looking for. Explore our curated rituals, learn from the Glow Guide, or connect
-            with the Luxe Glow concierge team for personalized support.
-          </p>
-          <div class="hero__actions" style="justify-content: center;">
-            <a class="btn btn--primary" href="index.html">Return home</a>
-            <a class="btn btn--ghost" href="collections.html">Shop collection</a>
-            <a class="btn btn--ghost" href="contact.html">Contact support</a>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Page not found. Explore Luxe Glow’s skincare rituals, consultations and journal.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Page not found • Luxe Glow</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Primary">
+      <a class="brand" href="index.html">Luxe Glow</a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-navigation">
+        <span class="sr-only">Toggle navigation</span>
+        &#9776;
+      </button>
+      <ul class="nav-links" id="primary-navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Shop</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn btn-secondary" href="consultations.html">Book a consultation</a>
+        <a class="cart-link" href="cart.html" aria-label="View cart">
+          <span>🛒</span>
+          <span class="cart-count" data-cart-count hidden>0</span>
+        </a>
       </div>
-    </main>
-  </body>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>We can’t find that ritual</h1>
+      <p>The page you’re looking for might have been moved or renamed. Let’s guide you back to a glow-worthy destination.</p>
+      <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a class="btn btn-primary" href="index.html">Return home</a>
+        <a class="btn btn-secondary" href="products.html">Shop skincare</a>
+        <a class="btn btn-secondary" href="contact.html">Contact support</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h4>Luxe Glow</h4>
+        <p>Science-backed rituals rooted in spa heritage, designed by esthetician and founder Noelle James.</p>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="consultations.html">Consultations</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Support</h5>
+        <ul class="footer-links">
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="shipping-returns.html">Shipping &amp; returns</a></li>
+          <li><a href="privacy-policy.html">Privacy policy</a></li>
+          <li><a href="terms-of-service.html">Terms of service</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Newsletter</h5>
+        <p>Join the glow letters for launch alerts, skin education and special events.</p>
+        <form class="contact-form" action="#" method="post">
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input id="newsletter-email" name="email" type="email" placeholder="you@example.com" required>
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> Luxe Glow. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+  <script defer src="assets/js/app.js"></script>
+</body>
 </html>

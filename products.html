@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shop Luxe Glow skincare rituals. Discover serums, moisturizers, mineral SPF and targeted treatments designed by estheticians.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Shop Luxe Glow • Professional Skincare Collection</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Primary">
+      <a class="brand" href="index.html">Luxe Glow</a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-navigation">
+        <span class="sr-only">Toggle navigation</span>
+        &#9776;
+      </button>
+      <ul class="nav-links" id="primary-navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html" aria-current="page">Shop</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn btn-secondary" href="consultations.html">Book a consultation</a>
+        <a class="cart-link" href="cart.html" aria-label="View cart">
+          <span>🛒</span>
+          <span class="cart-count" data-cart-count hidden>0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Shop the Luxe Glow apothecary</h1>
+      <p>Thoughtfully curated rituals for radiance, barrier strength and long-term skin resilience.</p>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <span class="eyebrow">All products</span>
+        <h2>Formulated to work in harmony</h2>
+        <p>Select products to add directly to your cart. Layer rituals for a bespoke routine that evolves with your skin.</p>
+      </div>
+      <div class="grid-3" data-product-grid></div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <span class="eyebrow">Why it works</span>
+        <h2>The Luxe Glow formulation standard</h2>
+      </div>
+      <div class="benefits-grid">
+        <article class="benefit-card">
+          <h3>Bioavailable actives</h3>
+          <p>We utilize encapsulation technology and optimized pH levels to ensure maximum efficacy without compromising tolerance.</p>
+        </article>
+        <article class="benefit-card">
+          <h3>Barrier-supportive bases</h3>
+          <p>Every formula features ceramides, amino acids or lipids to reinforce the skin barrier and reduce inflammation triggers.</p>
+        </article>
+        <article class="benefit-card">
+          <h3>Responsible sourcing</h3>
+          <p>Ingredients are traceable to ethical suppliers with fair labor practices and low environmental impact.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="split">
+        <div>
+          <div class="section-header" style="margin-bottom: 1.5rem;">
+            <span class="eyebrow">Esthetician services</span>
+            <h2>Need a personalized ritual?</h2>
+          </div>
+          <p>Book a virtual or in-studio consultation with our esthetician team. We design custom protocols, treatment plans and retail assortments aligned with your goals.</p>
+          <a class="btn btn-primary" href="consultations.html">Schedule consultation</a>
+        </div>
+        <div class="accordion" role="region" aria-label="Frequently asked questions">
+          <div class="accordion-item">
+            <button class="accordion-summary" type="button">Are Luxe Glow products pregnancy safe?<span aria-hidden="true">+</span></button>
+            <div class="accordion-content">Our core collection is formulated without retinoids or essential oils. Consult with your physician for ingredient-specific guidance.</div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-summary" type="button">Do you offer professional backbar sizes?<span aria-hidden="true">+</span></button>
+            <div class="accordion-content">Yes. Licensed spa partners receive exclusive backbar sizes, treatment protocols and merchandising support.</div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-summary" type="button">How quickly will I see results?<span aria-hidden="true">+</span></button>
+            <div class="accordion-content">Many clients report improved radiance within 7 days. Barrier support and tone refinement continue with consistent use.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h4>Luxe Glow</h4>
+        <p>Science-backed rituals rooted in spa heritage, designed by esthetician and founder Noelle James.</p>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="consultations.html">Consultations</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Support</h5>
+        <ul class="footer-links">
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="shipping-returns.html">Shipping &amp; returns</a></li>
+          <li><a href="privacy-policy.html">Privacy policy</a></li>
+          <li><a href="terms-of-service.html">Terms of service</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Newsletter</h5>
+        <p>Join the glow letters for launch alerts, skin education and special events.</p>
+        <form class="contact-form" action="#" method="post">
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input id="newsletter-email" name="email" type="email" placeholder="you@example.com" required>
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> Luxe Glow. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+  <script defer src="assets/js/app.js"></script>
+</body>
+</html>

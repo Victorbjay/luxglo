@@ -1,206 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Meet Elise Harper, founder of Luxe Glow. Discover the values, mission, and impact behind our science-backed skincare rituals." />
-    <title>About Luxe Glow | Founder Story &amp; Mission</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="icon" type="image/png" href="favicon.ico" />
-    <script defer src="assets/js/products.js"></script>
-    <script defer src="assets/js/cart.js"></script>
-    <script defer src="assets/js/main.js"></script>
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="wrapper site-header__inner">
-        <a class="brand" href="index.html">Luxe Glow</a>
-        <nav class="nav" data-nav>
-          <a href="index.html">Home</a>
-          <a href="collections.html">Shop</a>
-          <a href="about.html" aria-current="page">About</a>
-          <a href="consultation.html">Consultation</a>
-          <a href="contact.html">Contact</a>
-          <a href="blog.html">Glow Guide</a>
-        </nav>
-        <div class="header-actions">
-          <a class="btn btn--ghost" href="collections.html">Shop rituals</a>
-          <span class="header-divider" aria-hidden="true"></span>
-          <a class="btn btn--ghost cart-button" href="cart.html" aria-label="View cart">
-            <span>Cart</span>
-            <span class="badge" data-cart-count>0</span>
-          </a>
-          <button class="nav__mobile-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Toggle menu">
-            ☰
-          </button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover the Luxe Glow story, our founder's esthetician expertise and the values guiding our sustainable, science-backed skincare line.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>About Luxe Glow • Our Founder &amp; Philosophy</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Primary">
+      <a class="brand" href="index.html">Luxe Glow</a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="primary-navigation">
+        <span class="sr-only">Toggle navigation</span>
+        &#9776;
+      </button>
+      <ul class="nav-links" id="primary-navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="products.html">Shop</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn btn-secondary" href="consultations.html">Book a consultation</a>
+        <a class="cart-link" href="cart.html" aria-label="View cart">
+          <span>🛒</span>
+          <span class="cart-count" data-cart-count hidden>0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Rooted in esthetician excellence</h1>
+      <p>Built by Chicago-based esthetician and entrepreneur Noelle James, Luxe Glow honors skin diversity, clinical rigor and sustainable entrepreneurship.</p>
+    </section>
+
+    <section class="section split">
+      <div>
+        <span class="badge">Meet Noelle</span>
+        <h2>The founder story</h2>
+        <p>Noelle spent 12 years leading treatments at luxury spas and medical aesthetic clinics before founding Luxe Glow. Her mission: bridge clinical-grade performance with conscious sourcing and inclusive education.</p>
+        <p>After experiencing sensitivities caused by overly aggressive formulas, Noelle collaborated with cosmetic chemists to develop products that respect the skin barrier while delivering transformative results.</p>
+      </div>
+      <div class="hero-card">
+        <h3>Professional credentials</h3>
+        <ul class="footer-links">
+          <li>Licensed Esthetician &amp; Oncology Esthetics certified</li>
+          <li>Member, Global Wellness Institute Beauty Innovation Initiative</li>
+          <li>Advisor, Future of Esthetics Summit</li>
+        </ul>
+        <p class="mission-quote">“Skincare should be intelligent, intuitive and deeply respectful of our planet and communities.”</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <span class="eyebrow">Our values</span>
+        <h2>Principles guiding every formula</h2>
+      </div>
+      <div class="values-grid">
+        <article class="value-card">
+          <h3>Clinical integrity</h3>
+          <p>Every launch is backed by third-party testing, dermatologist review and ongoing formulation improvements.</p>
+        </article>
+        <article class="value-card">
+          <h3>Radical transparency</h3>
+          <p>Full ingredient traceability, supplier audits and sustainability reports shared annually.</p>
+        </article>
+        <article class="value-card">
+          <h3>Inclusive education</h3>
+          <p>Mentorship programs, scholarships and multilingual resources to support aspiring estheticians worldwide.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split">
+      <div>
+        <div class="section-header" style="margin-bottom: 1.5rem;">
+          <span class="eyebrow">Milestones</span>
+          <h2>Scaling impact with intention</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>2016 — The Atelier opens</h3>
+            <p>Noelle launches Luxe Glow Atelier, an immersive skin clinic serving Chicago’s creative community.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>2019 — Product lab partnership</h3>
+            <p>Collaboration begins with a women-led formulation lab to commercialize the first three Luxe Glow products.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>2022 — Global expansion</h3>
+            <p>Distribution extends to 18 countries with spa partners and curated retailers across North America and Europe.</p>
+          </div>
         </div>
       </div>
-    </header>
-
-    <main>
-      <section class="page-hero">
-        <div class="wrapper">
-          <p class="section__label">Our story</p>
-          <h1 class="page-hero__title">Skincare rituals designed by a founder who lives them</h1>
-          <p class="page-hero__description">
-            Luxe Glow began in a Los Angeles treatment room where esthetician and entrepreneur Elise Harper partnered with
-            modern women to repair stressed skin and restore glow. Today we deliver the same concierge-level care in every
-            product and service.
-          </p>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="wrapper founder">
-          <div class="founder__media">
-            <img
-              src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1000&q=80"
-              alt="Elise Harper, founder of Luxe Glow"
-            />
-          </div>
-          <div class="founder__story">
-            <h2>Meet Elise Harper</h2>
-            <p>
-              Elise is a licensed master esthetician, product developer, and former tech marketer who built Luxe Glow to bridge
-              clinical-grade results with luxurious daily rituals. Her approach blends ingredient expertise, business savvy,
-              and radical empathy for women balancing big goals with skin sensitivities.
-            </p>
-            <p>
-              After scaling her treatment studio waitlist to 2,000+ clients, Elise developed our hero products to bring that
-              transformation home. Today she leads product innovation, educational programming, and mentorship for the Luxe Glow
-              esthetics collective.
-            </p>
-            <div class="accent-block">
-              <h3 class="accent-block__title">Impact milestones</h3>
-              <p class="text-muted">A quick look at what the Luxe Glow community has achieved together.</p>
-              <div class="hero__stats">
-                <div class="hero__stat">
-                  <strong>120</strong>
-                  <span>Estheticians trained in the Luxe Glow method</span>
-                </div>
-                <div class="hero__stat">
-                  <strong>96%</strong>
-                  <span>Client retention across product + service offerings</span>
-                </div>
-                <div class="hero__stat">
-                  <strong>18</strong>
-                  <span>Community wellness events hosted annually</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section bg-light">
-        <div class="wrapper">
-          <div class="section__intro">
-            <span class="section__label">Our values</span>
-            <h2 class="section__title">The pillars guiding every formula and experience</h2>
-          </div>
-          <div class="values-grid">
-            <article class="value-card">
-              <h3>Holistic results</h3>
-              <p>
-                We combine clean ingredients, circadian science, and lifestyle coaching to deliver long-term glow rather than
-                quick fixes.
-              </p>
-            </article>
-            <article class="value-card">
-              <h3>Inclusive innovation</h3>
-              <p>
-                Our clinical testing spans Fitzpatrick I–VI and diverse lifestyles to ensure every product supports real-world
-                needs.
-              </p>
-            </article>
-            <article class="value-card">
-              <h3>Sustainable growth</h3>
-              <p>
-                From refillable packaging to supplier audits, we build earth-first systems that scale responsibly with your
-                business.
-              </p>
-            </article>
-            <article class="value-card">
-              <h3>Education-first</h3>
-              <p>
-                We empower entrepreneurs with wholesale playbooks, marketing assets, and skin coaching frameworks that convert.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="wrapper">
-          <div class="section__intro">
-            <span class="section__label">Press &amp; partners</span>
-            <h2 class="section__title">Trusted by media, retailers, and spa collectives</h2>
-            <p class="section__description">
-              Luxe Glow rituals are featured in Vogue, Essence, and Well+Good, and are stocked in premier spa boutiques across
-              North America, Europe, and the Middle East.
-            </p>
-          </div>
-          <div class="grid grid--three">
-            <div class="accent-block">
-              <h3 class="accent-block__title">Wholesale Partnership Deck</h3>
-              <p>Download a customizable pitch deck to present Luxe Glow inside your spa, boutique, or e-commerce store.</p>
-              <a class="btn btn--ghost" href="wholesale.html">Access wholesale hub</a>
-            </div>
-            <div class="accent-block">
-              <h3 class="accent-block__title">Founder speaking</h3>
-              <p>Book Elise for conferences, mastermind sessions, and virtual workshops on skin health and conscious scaling.</p>
-              <a class="btn btn--ghost" href="contact.html#speaking">Request availability</a>
-            </div>
-            <div class="accent-block">
-              <h3 class="accent-block__title">Retail education portal</h3>
-              <p>Employees receive modular training modules, shelf talkers, and campaign assets updated quarterly.</p>
-              <a class="btn btn--ghost" href="wholesale.html#training">Tour the portal</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="wrapper">
-        <div class="site-footer__upper">
-          <div class="footer-brand">
-            <a class="brand" href="index.html">Luxe Glow</a>
-            <p>
-              Luxe Glow is a modern skin health studio and product line delivering high-performance rituals that honor skin,
-              soul, and sustainability.
-            </p>
-          </div>
-          <div class="footer-nav">
-            <strong>Navigation</strong>
-            <a href="collections.html">Shop</a>
-            <a href="about.html" aria-current="page">About</a>
-            <a href="consultation.html">Consultation</a>
-            <a href="blog.html">Glow Guide</a>
-            <a href="contact.html">Contact</a>
-          </div>
-          <div class="footer-links">
-            <strong>Support</strong>
-            <a href="privacy-policy.html">Privacy policy</a>
-            <a href="terms.html">Terms of service</a>
-            <a href="returns.html">Returns &amp; exchanges</a>
-            <a href="wholesale.html">Wholesale program</a>
-          </div>
-          <div class="footer-links">
-            <strong>Contact</strong>
-            <span>hello@luxeglow.com</span>
-            <span>+1 (213) 555-0198</span>
-            <span>Los Angeles • Austin • Remote</span>
-          </div>
-        </div>
-        <div class="site-footer__bottom">
-          <span>&copy; <span data-year></span> Luxe Glow. All rights reserved.</span>
-          <span>Crafted with intention for skin entrepreneurs worldwide.</span>
-        </div>
+      <div class="contact-card">
+        <h3>Press &amp; speaking</h3>
+        <p>Noelle is available for media interviews, panel discussions and executive workshops focused on inclusive beauty innovation.</p>
+        <a class="btn btn-primary" href="mailto:press@luxeglow.com">Request press kit</a>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <span class="eyebrow">Community</span>
+        <h2>Our giveback commitments</h2>
+        <p>Luxe Glow invests 3% of annual revenue into professional development grants for estheticians from historically excluded communities.</p>
+      </div>
+      <div class="grid-3">
+        <article class="benefit-card">
+          <h3>Glow Futures Fund</h3>
+          <p>Scholarships for esthetics students covering tuition, textbooks and state board exam fees.</p>
+        </article>
+        <article class="benefit-card">
+          <h3>Mentor-in-Residence</h3>
+          <p>Rotating mentorships connecting students with senior estheticians, product developers and brand strategists.</p>
+        </article>
+        <article class="benefit-card">
+          <h3>Community clinics</h3>
+          <p>Quarterly pop-ups offering complimentary consultations, product donations and educational workshops.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h4>Luxe Glow</h4>
+        <p>Science-backed rituals rooted in spa heritage, designed by esthetician and founder Noelle James.</p>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="consultations.html">Consultations</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Support</h5>
+        <ul class="footer-links">
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="shipping-returns.html">Shipping &amp; returns</a></li>
+          <li><a href="privacy-policy.html">Privacy policy</a></li>
+          <li><a href="terms-of-service.html">Terms of service</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Newsletter</h5>
+        <p>Join the glow letters for launch alerts, skin education and special events.</p>
+        <form class="contact-form" action="#" method="post">
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input id="newsletter-email" name="email" type="email" placeholder="you@example.com" required>
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> Luxe Glow. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+  <script defer src="assets/js/app.js"></script>
+</body>
 </html>
